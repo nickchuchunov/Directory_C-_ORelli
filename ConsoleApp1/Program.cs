@@ -1,2 +1,9 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿
+using ConsoleApp1;
+
+
+
+
+Linq_test_intro linq_Test_intro = new Linq_test_intro();
+
+linq_Test_intro.PrintCounNomber(@"C:\Users\Nikolay_Chuchunov\Downloads\2.txt");
