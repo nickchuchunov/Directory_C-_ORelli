@@ -1,9 +1,16 @@
 ﻿
 using ConsoleApp1;
+using System.Xml;
 
 
 
 
-Linq_test_intro linq_Test_intro = new Linq_test_intro();
+DtoXML dtoXML = new DtoXML();
 
-linq_Test_intro.PrintCounNomber(@"C:\Users\Nikolay_Chuchunov\Downloads\2.txt");
+XmlReader xmlReader = XmlReader.Create(@"C:\Users\Nikolay_Chuchunov\Downloads\xmlexpiriens\13.xml");
+
+//XmlWriter xmlWriter = XmlWriter.Create(@"C:\Users\Nikolay_Chuchunov\Downloads\xmlexpiriens\13.xml");
+
+// dtoXML.WriteXml(xmlWriter);
+
+dtoXML.ReadXml(xmlReader);
